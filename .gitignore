@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Secrets & local config
+.env
+.env.*
+*.pem
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Runtime / generated
+graph_db.json
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Sujet de test (PDF volumineux, non requis dans le dépôt livrable)
+test_de_recrutement_IA.pdf

@@ -1,0 +1,19 @@
+# Render.com IaC configuration
+# Deploy with: connect your GitHub repo on https://render.com/new
+
+services:
+  - type: web
+    name: fastmemory-api
+    runtime: python
+    region: frankfurt  # closest to France
+    plan: free
+
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+
+    # Health check
+    healthCheckPath: /health

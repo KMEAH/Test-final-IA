@@ -1,0 +1,3 @@
+# Développement local optionnel (nécessite wheel/binaire compatible)
+-r requirements.txt
+fastmemory==0.4.6
